@@ -1,0 +1,87 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+nav.navbar {
+  font-size: 1vw;
+  .navbar-brand {
+    font-size: 1.25vw;
+  }
+  #navbarBasicExample {
+    .navbar-start {
+      font-size: 1.2vw;
+    }
+
+    .buttons {
+      font-size: 1.5vw;
+    }
+  }
+}
+body {
+  width: 100%;
+  height: 100%;
+  .index {
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+    width: 100%;
+    .hero-body {
+      .img-cover {
+        position: absolute;
+        background-color: black;
+        opacity: 0.4;
+        width: 100%;
+        height: 50%;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 30px;
+        height: 100%;
+        font-size: 1vw;
+        h1,
+        h2,
+        button {
+          z-index: 1;
+        }
+        h1 {
+          font-size: 4em;
+        }
+        h2 {
+          font-size: 2em;
+        }
+        button {
+          font-size: 2.5em;
+          width: 20%;
+        }
+      }
+    }
+    #img01 {
+      background-image: url('../../images/carousel01.jpg');
+    }
+    #img02 {
+      background-image: url('../../images/carousel02.jpg');
+      .field {
+        align-items: flex-end;
+      }
+    }
+    #img03 {
+      background-image: url('../../images/carousel03.jpg');
+    }
+    #img01,
+    #img02,
+    #img03 {
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .field {
+    font-size: 1.5vw;
+    button {
+      min-width: 100px;
+    }
+  }
+}
